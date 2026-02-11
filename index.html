@@ -12,16 +12,160 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="app">
  <main>
   <div class="main-cont">
-    main
+    <header id="about">
+      <div>
+        <img src="assets/icones/seta.png" alt="seta para a esquerda">
+        <p>Voltar</p>
+      </div>
+      <h1>
+        Formulário de Matrícula
+      </h1>
+      <p>
+        Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
+      </p>
+    </header>
+
+    <form action="">
+      <fieldset>
+      <legend>Informações sobre a cirança</legend>
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" placeholder="nome completo">
+
+      <label for="data">Data de nascimento</label>
+      <input type="date" id="data">
+
+      <label for="sexo">Sexo</label>
+      <select name="sexo" id="sexo">
+        <option value="1">
+          feminino
+        </option>
+        <option value="2">
+          masculino
+        </option>
+      </select>
+
+      <label for="infomed">Informações médicas</label>
+      <input type="textarea" id="infomed" placeholder="escreva as informações médicas que possam ser necessárias">
+
+      <label for="cert">Certidão de nascimento</label>
+      <input type="file" id="cert">
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço Residencial</legend>
+        
+    <label for="cep">CEP
+    <input type="text" name="" id="cep">
+    </label>
+
+    <label for="rua">Rua
+    <input type="text" name="" id="rua"> 
+    </label>
+
+    <label for="num">Número
+    <input type="text" name="num" id="num">
+    </label>
+
+    <label for="cidade">
+      cidade
+      <input type="text" name="cidade" id="cidade">
+    </label>
+
+    <label for="estado">
+      estado
+      <input type="text" name="estado" id="estado" >
+    </label>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        Informações do responsável
+      </legend>
+
+      <label for="nomeresp">
+        Nome do responsável
+        <input type="text" name="nomeresp" id="nomeresp">
+      </label>
+
+      <label for="tel">
+        telefone
+        <input type="number" name="tel" id="tel">
+      </label>
+
+      <label for="mail">
+        E-mail
+        <input type="email" name="mail" id="mail">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        Opções de matrícula
+      </legend>
+
+      <label for="turno">
+        Turno de estudo
+        <div>
+        <input type="radio" name="turno" id="noturno">]
+        <img src="assets/icones/nuvem.png" alt="noite">
+        </div>
+        <div>
+        <input type="text" name="turno" id="diurno">
+        <img src="assets/icones/sun-02.png" alt="dia">
+      </div>
+      </label>
+
+      <label for="esporte">
+        Em qual esporte você gostaria de inscrever seu filho?
+        <div>
+          <input type="radio" name="esporte" id="futebol">
+          <img src="assets/icones/football.png" alt="">
+        </div>
+        <div>
+          <input type="radio" name="esporte" id="basquete">
+          <img src="assets/icones/basketball-02.png" alt="">
+        </div>
+        <div>
+          <input type="radio" name="esporte" id="natacao">
+          <img src="assets/icones/swimming.png" alt="">
+        </div>
+        <div>
+          <input type="radio" name="esporte" id="yoga">
+          <img src="assets/icones/yoga-02.png" alt="">
+        </div>
+        <div>
+          <input type="radio" name="esporte" id="volei">
+          <img src="assets/icones/volleyball.png" alt="">
+        </div>
+        <div>
+          <input type="radio" name="esporte" id="luta">
+          <img src="assets/icones/boxing-glove-01.png" alt="">
+        </div>
+      </label>
+    </fieldset>
+    </form>
   </div>
  </main>
   
  <aside>
   <div class="aside-cont">
-    aside
+  <header>
+    <img src="assets/logo.png" alt="logo estrelas da manhã">
+    <h1>
+      Porque cada momento de <span>aprendizado</span> conta
+    </h1>
+    <p>
+      Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
+    </p>
+  </header>
+  <img src="assets/pana.svg" alt="grupo de pessoas estudando">
+
   </div>
  </aside>
+ </div>
 </body>
 </html>

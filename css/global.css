@@ -1,3 +1,9 @@
+*{
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root{
   /* definindo var para as fontes */
   --font-family: 'Poppins', sans-serif;
@@ -12,4 +18,31 @@
 
   --surface-primary: white;
   --surface-secundary: #fee7d6;
+
+  --stroke-default: #d6d3d1;
+  --stroke-hig: #f3541c;
+  --error: #dc2626;
+
+}
+
+/* começando o layout */
+
+#app{
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+
+}
+
+main{
+  /* esse overflow permite com que na main tenha uma barra de scrolagem
+   e que em outro lugar especifico não tornando fixo */
+  overflow: auto;
+  padding: 4rem;
+  background-color: var(--surface-primary);
+}
+
+aside{
+  padding: 4rem;
+  background-color: #FFBF9D;
+
 }
