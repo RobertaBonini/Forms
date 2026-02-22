@@ -2,6 +2,8 @@
   margin-top: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-family);
+  
 }
 
 :root{
@@ -27,22 +29,53 @@
 
 /* começando o layout */
 
-#app{
+.app{
   display: grid;
   grid-template-columns: 51.25% 48.75%;
-
+  
 }
+
+ body{
+overflow: hidden;
+} 
 
 main{
   /* esse overflow permite com que na main tenha uma barra de scrolagem
    e que em outro lugar especifico não tornando fixo */
-  overflow: auto;
+   height: 100vh;
+   overflow: auto;
   padding: 4rem;
   background-color: var(--surface-primary);
+  
+
+  .main-cont{
+    max-width: 33rem;
+    margin-left: auto;
+  }
+
 }
 
 aside{
   padding: 4rem;
   background-color: #FFBF9D;
+  height: 53rem;
 
+  .aside-cont{
+    max-width: 31rem;
+    margin-right: auto;
+  }
+}
+
+/* estilizando o aside */
+
+aside h1{
+ font-size: 2.5rem;
+}
+
+span{
+  color: var(--text-high) ;
+}
+
+p{
+  font-size: var(--text);
 }
