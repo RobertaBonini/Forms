@@ -1,22 +1,21 @@
-*{
+* {
   margin-top: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-family);
-  
 }
 
-:root{
+:root {
   /* definindo var para as fontes */
-  --font-family: 'Poppins', sans-serif;
+  --font-family: "Poppins", sans-serif;
   --text: 400 1rem/1.5 var(--font-family);
   --text-sm: 400 0.875rem/1.4 var(--font-family);
-  
+
   /* definindo variaveis de cores */
   --text-primary: #292524;
-  --text-secundary: #57564E;
-  --text-tertiary: #8F8881;
-  --text-high: #E43a12;
+  --text-secundary: #57564e;
+  --text-tertiary: #8f8881;
+  --text-high: #e43a12;
 
   --surface-primary: white;
   --surface-secundary: #fee7d6;
@@ -24,43 +23,39 @@
   --stroke-default: #d6d3d1;
   --stroke-hig: #f3541c;
   --error: #dc2626;
-
 }
 
 /* começando o layout */
 
-.app{
+.app {
   display: grid;
   grid-template-columns: 51.25% 48.75%;
-  
 }
 
- body{
-overflow: hidden;
-} 
+body {
+  overflow: hidden;
+}
 
-main{
+main {
   /* esse overflow permite com que na main tenha uma barra de scrolagem
    e que em outro lugar especifico não tornando fixo */
-   height: 100vh;
-   overflow: auto;
+  height: 100vh;
+  overflow: auto;
   padding: 4rem;
   background-color: var(--surface-primary);
-  
 
-  .main-cont{
+  .main-cont {
     max-width: 33rem;
     margin-left: auto;
   }
-
 }
 
-aside{
+aside {
   padding: 4rem;
-  background-color: #FFBF9D;
+  background-color: #ffbf9d;
   height: 53rem;
 
-  .aside-cont{
+  .aside-cont {
     max-width: 31rem;
     margin-right: auto;
   }
@@ -68,15 +63,15 @@ aside{
 
 /* estilizando o aside */
 
-aside h1{
- font-size: 2.5rem;
+aside h1 {
+  font-size: 2.5rem;
 }
 
-span{
-  color: var(--text-high) ;
+span {
+  color: var(--text-high);
 }
 
-p{
+p {
   font-size: var(--text);
 }
 
@@ -88,14 +83,14 @@ p{
   display: flex;
   align-items: center;
   gap: 0.38rem;
-  span{
-  color: var(--text-secundary);
+  span {
+    color: var(--text-secundary);
   }
 }
 
-
-.main-cont, form{
-/* colocando espaçamento entre linhas 
+.main-cont,
+form {
+  /* colocando espaçamento entre linhas 
 fixo de 48pixeis */
   display: grid;
   row-gap: 3rem;
@@ -103,34 +98,33 @@ fixo de 48pixeis */
 
 /* Informações sobre as crianças */
 
-fieldset{
+fieldset {
   display: grid;
   gap: 1.5rem;
   border: none;
-legend{
-margin-bottom: 1.5rem;
-font-size: 1rem;
-font-weight: 700;
-color: var(--text-primary);
+  legend {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
   }
-label{
-  color: var(--text-tertiary);
-input, select{
-  color: var(--text-primary);
-  padding: 1rem;
-  width: 33rem;
-  border-radius: 0.5rem;
-  height: 3rem;
-}
-textarea{
-color: var(--text-primary);
-  padding: 1rem;
-  width: 33rem;
-  border-radius: 0.5rem;
-  height: 7.5rem;
-}
-
-}
+  label {
+    color: var(--text-tertiary);
+    & input, select {
+      color: var(--text-primary);
+      padding: 1rem;
+      width: 33rem;
+      border-radius: 0.5rem;
+      height: 3rem;
+    }
+    textarea {
+      color: var(--text-primary);
+      padding: 1rem;
+      width: 33rem;
+      border-radius: 0.5rem;
+      height: 7.5rem;
+    }
+  }
 }
 
 /* #cert {
@@ -138,19 +132,19 @@ color: var(--text-primary);
   height: 1.5rem;
 } */
 
-.dropzone{
+.dropzone {
   border: 1px dashed var(--stroke-default);
   border-radius: 0.25rem;
 
   display: grid;
   justify-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 
   text-align: center;
   padding: 1.75rem 1rem;
 
   position: relative;
-  & input{
+  & input {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -158,26 +152,21 @@ color: var(--text-primary);
     opacity: 0;
   }
 
-& p{
-  color: #A8A29E;
-
-}
-
-&:hover{
-  border-width: 2px;
-  border-color: var(--stroke-hig) ;
-  background-color: var(--surface-secundary);
-  
-  & p{
-    color: var(--text-tertiary);
+  & p {
+    color: #a8a29e;
   }
-  
-& svg path{
-   stroke: var(--stroke-hig);
+
+  &:hover {
+    border-width: 2px;
+    border-color: var(--stroke-hig);
+    background-color: var(--surface-secundary);
+
+    & p {
+      color: var(--text-tertiary);
+    }
+
+    & svg path {
+      stroke: var(--stroke-hig);
+    }
+  }
 }
-
-}
-
-
-}
-

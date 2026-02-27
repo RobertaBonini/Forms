@@ -1,1 +1,53 @@
 @import url(global.css);
+
+/* residencial */
+
+#endereco {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+
+#rua,
+#cidade {
+  width: 20.75rem;
+}
+
+#num,
+#estado {
+  width: 11rem;
+}
+
+#tur {
+  display: flex;
+  justify-content: space-between;
+
+  & .card{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    
+    text-align: center;
+    width: 16rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    height: 8rem;
+
+    &:hover {
+      border: solid #f3541c;
+    }
+    
+    div{
+      margin-block: 20px;
+      text-align: center;
+      
+    }
+
+  }
+
+  & input {
+    width: 1rem;
+  }
+}
