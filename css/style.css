@@ -170,3 +170,23 @@
 #esportes .op:has(input:checked) {
   border: 2px solid #f3541c;
 }
+
+
+/* css dos botões */
+
+div button{
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: solid #f3541c;
+
+  & #salvar span{
+    width: 100%;
+    color: #f3541c;
+  }
+   
+}
+
+#matr{
+    background-color: #f3541c;
+    color: antiquewhite;
+  }
