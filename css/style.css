@@ -65,7 +65,7 @@
   cursor: pointer;
 
   background-image: url(/assets/icones/check.png);
-  background-size: 1.5rem;
+  background-size: 1rem;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -74,4 +74,99 @@
 
 #tur input[type="radio"]:checked {
   background-image: url(/assets/icones/okverm.png);
+}
+
+
+/* parte de escolha dos esportes */
+
+#esporte{
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 0.5fr 1fr 1fr); */
+  grid-template-areas: 
+  "A A A A"
+  "B C D E"
+  "F G . ."
+  ;
+
+  gap: 1rem;
+}
+
+.desc{
+  grid-area: A;
+}
+
+#esporte > :nth-child(2){
+  grid-area: B;
+}
+
+#esporte > :nth-child(3){
+  grid-area: C;
+}
+
+#esporte > :nth-child(4){
+  grid-area: D;
+}
+
+#esporte > :nth-child(5){
+  grid-area: E;
+}
+
+#esporte > :nth-child(6){
+  grid-area: F;
+}
+
+#esporte > :nth-child(7){
+  grid-area: G;
+}
+
+#esporte .op {
+  border: 1px solid;
+  width: 7.5rem;
+  height: 8rem;
+  border-radius: 1rem;
+
+  
+}
+
+/* começando a arrumar os botões do input */
+
+ .op input{
+  appearance: none;        /* remove a bolinha padrão */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  cursor: pointer;
+
+  background-image: url(/assets/icones/check.png);
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin: auto;
+ box-sizing: border-box;
+  width: 0.2rem;
+
+  display: flex;
+}
+
+.op input[type="radio"]:checked {
+  background-image: url(/assets/icones/okverm.png);
+}
+
+.op div {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 2;
+  row-gap: 0.5rem;
+ 
+}
+.op img{
+  text-align: center;
+}
+
+#esportes .op:has(input:checked) {
+  border: 2px solid #f3541c;
 }
